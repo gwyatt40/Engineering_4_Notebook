@@ -52,6 +52,50 @@ for i in range (10):
 - Copy (from outside): ctrl+C Paste(into BeagleTerm): ctrl+shift+V
 
 ## Hello Python
-### Assignment: 
+### Description: create a dice roller code in python 
+### Filename: dice_roller.py
 
 
+
+ ```
+# Automatic Dice Roller
+
+# Written by Georgia Wyatt
+
+# 9.15.21
+
+from random import randint
+
+print ("Automatic Dice Roller")
+print ("Press enter to roll")
+
+
+import random
+
+def roll_dice(): #Roll dice function 
+    roll = random.randint(1,6)
+    print("You rolled a %d " % roll)
+    print("Press enter twice to roll again")
+    print ("Press x + enter to quit")
+
+
+def main():
+    
+    
+    print("") #if I remove this print function I get an indent error for while True
+
+while True: #continuous loop
+    enter = input("")
+    if enter == '':  # hitting enter == ''  empty string
+        roll_dice()
+    x = input("")
+    if x:
+        print("Goodbye!")  
+        break #exits program
+       
+    
+main()
+
+
+```
+</details>
