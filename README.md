@@ -1,8 +1,8 @@
 # Engineering_4_Notebook
 ## Hello Raspberry Pi: 
-### Filename: hello_world.py
-### Directories: pi@raspberrypi:~/Documents/Python$
-### Description: 
+#### Filename: hello_world.py
+#### Directories: pi@raspberrypi:~/Documents/Python$
+#### Description: 
 Prints text “Hello World!” 10 times, each on a new line. 
 
 ### Result: 
@@ -127,7 +127,7 @@ while True:
 - I based my code around [this discussion](https://stackoverflow.com/questions/47560026/how-to-get-python-3-to-use-enter-as-an-input/47560057) from Stack Overflow. 
 
 
-### Python Program 01 Calculator (Hello Functions
-### Filename: python_calculator1.py
-### Description: 
+## Python Program 01 Calculator (Hello Functions
+#### Filename: python_calculator1.py
+#### Description: 
  Create a calculator that, when given two numbers, can carry out five operations (add, subtract, multiply, divide, modulo)
