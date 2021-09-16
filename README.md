@@ -1,8 +1,8 @@
 # Engineering_4_Notebook
 ## Hello Raspberry Pi: 
-#### Filename: hello_world.py
-#### Directories: pi@raspberrypi:~/Documents/Python$
-#### Description: 
+### Filename: hello_world.py
+### Directories: pi@raspberrypi:~/Documents/Python$
+### Description: 
 Prints text “Hello World!” 10 times, each on a new line. 
 
 ### Result: 
@@ -67,7 +67,7 @@ Connection to github push readme and python files.
 #### Description:
 Create a dice roller code in python.
 ### Result:
-<img src="https://github.com/gwyatt40/Engineering_4_Notebook/blob/main/Images/dice_roller_screenshot.png" alt="Dice Roller Results" width="400" height="300">
+<img src="https://github.com/gwyatt40/Engineering_4_Notebook/blob/main/Images/dice_roller.png" alt="Dice Roller Results" width="400" height="300">
 
 
 ### Code:
@@ -127,7 +127,68 @@ while True:
 - I based my code around [this discussion](https://stackoverflow.com/questions/47560026/how-to-get-python-3-to-use-enter-as-an-input/47560057) from Stack Overflow. 
 
 
-## Python Program 01 Calculator (Hello Functions
-#### Filename: python_calculator1.py
-#### Description: 
- Create a calculator that, when given two numbers, can carry out five operations (add, subtract, multiply, divide, modulo)
+### Python Program 01 Calculator (Hello Functions
+### Filename: python_calculator1.py
+### Description: 
+Create a calculator that, when given two numbers, can carry out five operations (add, subtract, multiply, divide, modulo)
+
+### Results:
+
+<img src="https://github.com/gwyatt40/Engineering_4_Notebook/blob/main/Images/python_calculator_1.png" alt="Dice Roller Results" width="450" height="325">
+
+### Code:
+<details>
+  <summary> Python Calculator 1 Code </summary>
+
+```
+# Python Program 01 - Calculator (ENGR4)
+
+#Written by Georgia Wyatt
+
+#9.16.2021 
+
+#First part of the code is defining function: 
+
+
+def doMath(x, y, c): #One function runs several math operations
+    
+   if c == 1: # c value determines function
+    return(x + y)
+   if c == 2:
+    return x - y
+   if c == 3:
+    return x * y
+   if c == 4:
+    return round((x / y), 2)  #Round function, 2 is number of decimal places
+   if c == 5:
+    return x % y # Modulo symbol is % in python
+
+
+
+# Take input from the user:
+
+a = int(input("Enter first number: ")) 
+b = int(input("Enter second number: "))
+
+# This part of the code plugs input variables into doMath function: 
+print("Sum:\t\t" + str(doMath(a, b, 1))) #str necessary to prevent concatenate error
+print("Difference:\t" + str(doMath(a, b, 2)))
+print("Product:\t" + str(doMath(a, b, 3)))
+print("Quotient:\t" + str(doMath(a, b, 4)))
+print("Modulo:\t\t" + str(doMath(a, b, 5)))
+   
+```
+</details>
+### Python Commands:
+- % - Python symbol for modulo
+- str - Defines as string, fixes int concatenate error
+- round(n, z) - Rounds quantity (n) to the nearest z decimal places
+### Reflection:
+- Can define variables directly in Python, don't need to state initially
+- Modulo is the remainded between two numbers and in Python it is represented by % or 'mod'
+- Int concatenate errors can be fixed by surrounding functions in str()
+- Can put multiple if statements within one function, allowing it do take multiple actions depending on input
+- I initially used five different functions before consolidating them into doMath(), doMath() could run each operation based on c variable input
+- round() function rounds values either to whole numbers or to a specified number of decimal points (see Python Commands)
+### Helpful Links
+- I based my code around [this Github gists example](https://gist.github.com/complxalgorithm/ee685852a2a37e88ebc8d64d2d126d91). I eliminated the function choice aspect and then consolidated the five functions into one, doMath(). 
