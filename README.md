@@ -54,8 +54,11 @@ for i in range (10):
 ## Hello Python
 ### Description: create a dice roller code in python 
 ### Filename: dice_roller.py
+### Result:
 
-
+### Code:
+<details>
+  <summary>Automatic Dice Roller Code</summary>
 
  ```
 # Automatic Dice Roller
@@ -91,6 +94,20 @@ while True:
 
 ```
 </details>
-### Result
 
-### Python 
+### Python Commands: 
+- import random from random import randint - Import random numbergen libraries
+- while True- Endless loop function
+- n = input("") - Sets a key as input when pressed
+- if - If statement, if this is true then do this
+- def function(): - Define actions involved in a function
+- roll = random.rantint(x,y) - Randomly generate a number between x and y
+- %d % roll- Prints generated number
+- break - Ends loop and exits program
+
+### Reflection: 
+- Ran into indent issues often. Deleting extraneous functions left over from copying code fixed this. 
+- Tried using an exit() function and failed. break is the command to end the loop and exit.
+- while True loop keeps program from ending as soon as number is generated. 
+### Helpful links: 
+- I based my code around [this example](https://stackoverflow.com/questions/47560026/how-to-get-python-3-to-use-enter-as-an-input/47560057) from Stack Overflow. 
