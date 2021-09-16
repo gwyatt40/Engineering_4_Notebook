@@ -179,16 +179,19 @@ print("Modulo:\t\t" + str(doMath(a, b, 5)))
    
 ```
 </details>
+
 ### Python Commands:
 - % - Python symbol for modulo
 - str - Defines as string, fixes int concatenate error
 - round(n, z) - Rounds quantity (n) to the nearest z decimal places
+
 ### Reflection:
 - Can define variables directly in Python, don't need to state initially
-- Modulo is the remainded between two numbers and in Python it is represented by % or 'mod'
+- Modulo is the remainder between two numbers and in Python it is represented by % or 'mod'
 - Int concatenate errors can be fixed by surrounding functions in str()
 - Can put multiple if statements within one function, allowing it do take multiple actions depending on input
 - I initially used five different functions before consolidating them into doMath(), doMath() could run each operation based on c variable input
 - round() function rounds values either to whole numbers or to a specified number of decimal points (see Python Commands)
+
 ### Helpful Links
-- I based my code around [this Github gists example](https://gist.github.com/complxalgorithm/ee685852a2a37e88ebc8d64d2d126d91). I eliminated the function choice aspect and then consolidated the five functions into one, doMath(). 
+- I based my code around [this Github Gists example](https://gist.github.com/complxalgorithm/ee685852a2a37e88ebc8d64d2d126d91). I eliminated the function choice aspect and then consolidated the five functions into one, doMath(). 
