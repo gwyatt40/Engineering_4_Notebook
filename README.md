@@ -195,3 +195,55 @@ print("Modulo:\t\t" + str(doMath(a, b, 5)))
 
 ### Helpful Links
 - I based my code around [this Github Gists example](https://gist.github.com/complxalgorithm/ee685852a2a37e88ebc8d64d2d126d91). I eliminated the function choice aspect and then consolidated the five functions into one, doMath(). 
+
+## Quadratic Calculator
+#### Filename: quadratic_calculator.py
+
+### Description: 
+Calculates roots of a quadratic from input coefficients. 
+
+### Results
+
+### Code
+
+# Quadratic Calculator
+
+# Written by Georgia Wyatt
+
+# 9.20.21
+
+
+# import complex math module (contains sqrt)
+import cmath
+
+print("Quadratic Solver")
+print("Enter the coefficients for ax^2 + bx + c = 0")
+
+
+# while True loop to repeat actions
+while True: 
+    a = int(input("Enter a: ")) # input coefficients
+    b = int(input("Enter b: ")) 
+    c = int(input("Enter c: "))
+
+    # calculate the discriminant
+    d = (b**2) - (4*a*c)
+
+
+    if d >= 0: # positive or 0 discriminant means two real roots
+        sol1 = (-b-cmath.sqrt(d))/(2*a) # calculate roots (quadratic formula)
+        sol2 = (-b+cmath.sqrt(d))/(2*a)
+        print('The solution are {0} and {1}'.format(sol1,sol2))
+    
+    if d < 0: # negative discriminant means no real roots
+        print("No real roots")
+        
+   # exit code
+    print("Press enter to continue")
+    print("Press x to exit")
+    
+    x = input("")
+       
+    if x:
+       print("Goodbye!")  
+       break 
