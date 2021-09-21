@@ -203,9 +203,14 @@ print("Modulo:\t\t" + str(doMath(a, b, 5)))
 Calculates roots of a quadratic from input coefficients. 
 
 ### Results
+<img src="https://github.com/gwyatt40/Engineering_4_Notebook/blob/main/Images/quadratic_calculator.png" alt="Dice Roller Results" width="475" height="350">
 
-### Code
+### Code: 
 
+<details>
+  <summary> Quadratic Calculator Code </summary>
+        
+``` 
 # Quadratic Calculator
 
 # Written by Georgia Wyatt
@@ -219,8 +224,7 @@ import cmath
 print("Quadratic Solver")
 print("Enter the coefficients for ax^2 + bx + c = 0")
 
-
-# while True loop to repeat actions
+ # while True loop to repeat actions
 while True: 
     a = int(input("Enter a: ")) # input coefficients
     b = int(input("Enter b: ")) 
@@ -247,3 +251,8 @@ while True:
     if x:
        print("Goodbye!")  
        break 
+        
+```
+
+
+</details>
