@@ -1,14 +1,14 @@
 # Engineering_4_Notebook
-## Hello Raspberry Pi: 
+## Hello Raspberry Pi 
 #### Filename: hello_world.py
 ### Directories: pi@raspberrypi:~/Documents/Python$
-### Description: 
+### Description 
 Prints text “Hello World!” 10 times, each on a new line. 
 
-### Result: 
+### Result 
 
 
-### Code: 
+### Code
 
 <details>
   <summary> Hello, World Code </summary>
@@ -23,7 +23,7 @@ Prints text “Hello World!” 10 times, each on a new line.
 </details>
 
 
-### Terminal Commands: 
+### Terminal Commands 
 - cd DirName - opens directory (directory names are case sensitive!) 
 - mkdir FolderName - creates directory
 - cd .. - go back a directory (remember space!) 
@@ -37,7 +37,7 @@ Prints text “Hello World!” 10 times, each on a new line.
 - clear - clears terminal screen (but saves info, directories etc) 
 - SHUTDOWN: sudo shutdown -h now
 - sudo nano /etc/profile add export TERM=xterm to bottom of file save, exit, and reboot py for color change
-### Python Commands: 
+### Python Commands 
 - print (“Hello World!”) - prints text in quotations 
 - ctrl x, y, enter - save and exit python file editor 
 - for i in range (val): - runs indented command on next line val number of times 
@@ -47,11 +47,11 @@ Prints text “Hello World!” 10 times, each on a new line.
 - Pin plug in order: outside row near SD card. Red, space, black, white, green. 
 
 
-## Github Set Up:  
-### Assignment: 
+## Github Set Up  
+### Assignment
 Connection to github push readme and python files. 
 
-### Git Commands: 
+### Git Commands 
 - git add filename - adds file to git
 - git config --global user.email "gwyatt40@charlottesvilleschools.org" - ID 1
 - git config --global user.name "gwyatt40" - ID 2
@@ -64,13 +64,13 @@ Connection to github push readme and python files.
 
 ## Hello Python
 #### Filename: dice_roller.py
-#### Description:
+#### Description
 Create a dice roller code in python.
-### Result:
+### Result
 <img src="https://github.com/gwyatt40/Engineering_4_Notebook/blob/main/Images/dice_roller.png" alt="Dice Roller Results" width="400" height="300">
 
 
-### Code:
+### Code
 <details>
   <summary>Automatic Dice Roller Code</summary>
 
@@ -109,7 +109,7 @@ while True:
 ```
 </details>
 
-### Python Commands: 
+### Python Commands 
 - import random from random import randint - Import random numbergen libraries
 - while True- Endless loop function
 - n = input("") - Sets a key as input when pressed
@@ -119,24 +119,24 @@ while True:
 - %d % roll- Prints generated number
 - break - Ends loop and exits program
 
-### Reflection: 
+### Reflection
 - Ran into indent issues often. Deleting extraneous functions left over from copying code fixed this. 
 - Tried using an exit() function and failed. break is the command to end the loop and exit.
 - while True loop keeps program from ending as soon as number is generated. 
-### Helpful links: 
+### Helpful links 
 - I based my code around [this discussion](https://stackoverflow.com/questions/47560026/how-to-get-python-3-to-use-enter-as-an-input/47560057) from Stack Overflow. 
 
 
 ### Python Program 01 Calculator (Hello Functions
 ### Filename: python_calculator1.py
-### Description: 
+### Description 
 Create a calculator that, when given two numbers, can carry out five operations (add, subtract, multiply, divide, modulo)
 
-### Results:
+### Results
 
 <img src="https://github.com/gwyatt40/Engineering_4_Notebook/blob/main/Images/python_calculator_1.png" alt="Dice Roller Results" width="450" height="325">
 
-### Code:
+### Code
 <details>
   <summary> Python Calculator 1 Code </summary>
 
@@ -180,12 +180,12 @@ print("Modulo:\t\t" + str(doMath(a, b, 5)))
 ```
 </details>
 
-### Python Commands:
+### Python Commands
 - % - Python symbol for modulo
 - str - Defines as string, fixes int concatenate error
 - round(n, z) - Rounds quantity (n) to the nearest z decimal places
 
-### Reflection:
+### Reflection
 - Can define variables directly in Python, don't need to state initially
 - Modulo is the remainder between two numbers and in Python it is represented by % or 'mod'
 - Int concatenate errors can be fixed by surrounding functions in str()
@@ -199,13 +199,13 @@ print("Modulo:\t\t" + str(doMath(a, b, 5)))
 ## Quadratic Calculator
 #### Filename: quadratic_calculator.py
 
-### Description: 
+### Description 
 Calculates roots of a quadratic from input coefficients. 
 
 ### Results
-<img src="https://github.com/gwyatt40/Engineering_4_Notebook/blob/main/Images/quadratic_calculator.png" alt="Dice Roller Results" width="475" height="350">
+<img src="https://github.com/gwyatt40/Engineering_4_Notebook/blob/main/Images/quadratic_calculator.png" alt="Dice Roller Results" width="450" height="325">
 
-### Code: 
+### Code 
 
 <details>
   <summary> Quadratic Calculator Code </summary>
@@ -256,3 +256,17 @@ while True:
 
 
 </details>
+
+### Python Commands
+  - import cmath calls complex math library which contains sqrt and other functions
+  - (-b+-cmath.sqrt(d))/(2*a) is the equation for the quadratic formila itself
+  - d = (b**2) - (4*a*c) is the discriminant itself 
+  
+  
+### Reflection
+  - Most of this code involved using parts of other previous codes (ex. if x exit sequence)
+  - The rest of it I found online (ex. discriminant and quadratic formula calculations)
+  - The quadratic formula here could be set as a function initially instead of being written out later in the code
+  
+### Helpful Links
+  - I based my code around [this example](https://www.programiz.com/python-programming/examples/quadratic-roots) from Programiz
