@@ -134,7 +134,7 @@ Create a calculator that, when given two numbers, can carry out five operations 
 
 ### Results
 
-<img src="https://github.com/gwyatt40/Engineering_4_Notebook/blob/main/Images/python_calculator_1.png" alt="Dice Roller Results" width="450" height="325">
+<img src="https://github.com/gwyatt40/Engineering_4_Notebook/blob/main/Images/python_calculator_1.png" alt="Python Calculator Results" width="450" height="325">
 
 ### Code
 <details>
@@ -203,7 +203,7 @@ print("Modulo:\t\t" + str(doMath(a, b, 5)))
 Calculates roots of a quadratic from input coefficients. 
 
 ### Results
-<img src="https://github.com/gwyatt40/Engineering_4_Notebook/blob/main/Images/quadratic_calculator.png" alt="Dice Roller Results" width="450" height="325">
+<img src="https://github.com/gwyatt40/Engineering_4_Notebook/blob/main/Images/quadratic_calculator.png" alt="Quadratic Calculator Results" width="450" height="325">
 
 ### Code 
 
@@ -271,3 +271,41 @@ while True:
   
 ### Helpful Links
   - I based my code around [this example](https://www.programiz.com/python-programming/examples/quadratic-roots) from Programiz
+
+ ## Strings and Loops
+ 
+ #### Filename: stringsloops.py
+ 
+ ### Description 
+   Splits a phrase letter by letter on new lines. Types a - for spaces. 
+ 
+ ### Results
+  <img src="https://github.com/gwyatt40/Engineering_4_Notebook/blob/main/Images/strings_and_loops.png" alt="Strings and Loops Results" width="325" height="">
+  
+ ### Code
+  <details>
+  <summary> Strings and Loops Code </summary>
+        
+``` 
+print ("Enter phrase") # initial instructions
+
+for x in input(): # takes input, input is string, so x is character in string
+    if x == ' ': print('-') # replaces spaces with - signs
+    else: print (x) # prints non space characters on new lines
+        
+```
+
+
+</details>
+
+### Python Commands
+  - Since input is a string, taking x from input takes a single character 
+  - if, else statement in this case means that characters print on seperate lines
+ 
+### Reflection
+  - Bob let me copy his code for this so shout out Bob!!!
+  - I originally tried to do this using split() or list() functions but could not get the characters to print on separate lines and couldn't get the spaces to print as minus signs. I tried running a split() function to split into words, and then running list() functions on each word to split into letters, but this was much too complicated. 
+  - Since strings are technically arrays, and the input here is a string, the code takes out individual characters from the array and defines them as x, it runs each character and prints it on a new line, unless it is a space, which it replaces with a - sign. 
+  
+ ### Helpful Links
+  - Bob's code was from [this W3 Schools site](https://www.w3schools.com/python/python_for_loops.asp) originally. The site also has information on how to add loop breaks and other specifics to this program. 
