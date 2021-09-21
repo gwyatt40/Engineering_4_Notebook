@@ -237,7 +237,7 @@ while True:
     if d >= 0: # positive or 0 discriminant means two real roots
         sol1 = (-b-cmath.sqrt(d))/(2*a) # calculate roots (quadratic formula)
         sol2 = (-b+cmath.sqrt(d))/(2*a)
-        print('The solution are {0} and {1}'.format(sol1,sol2))
+        print('The solutions are {0} and {1}'.format(sol1,sol2))
     
     if d < 0: # negative discriminant means no real roots
         print("No real roots")
@@ -267,6 +267,7 @@ while True:
   - Most of this code involved using parts of other previous codes (ex. if x exit sequence)
   - The rest of it I found online (ex. discriminant and quadratic formula calculations)
   - The quadratic formula here could be set as a function initially instead of being written out later in the code
+  - Spelling mistake in the results image was fixed later (the solutions are)
   
 ### Helpful Links
   - I based my code around [this example](https://www.programiz.com/python-programming/examples/quadratic-roots) from Programiz
