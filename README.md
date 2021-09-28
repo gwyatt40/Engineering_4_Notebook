@@ -318,7 +318,8 @@ for x in input(): # takes input, input is string, so x is character in string
   ### Code
   <details>
   <summary> Hangman Code </summary>
-        
+	  
+```        
 import sys
 import getpass
 def hangman():
@@ -364,13 +365,15 @@ def start_game(word):
 			print((updated_dashes(word,input_letter,number_dashes,)),'')
 			
 			print("Press enter to guess word, press x to guess letter")
-            enter = input("")
-                if enter == '':  # hitting enter == ''  empty string
-                guess_word()
-            x = input("")
-                if x:
-                input_letter()
-            
+			enter = input("")
+			if enter:
+			    guess_word()
+			x = input("")
+			if x:
+			    input_letter()
+			
+			
+
 
 			player_lives-=1
 			print(visuals(player_lives))
@@ -410,11 +413,11 @@ def updated_dashes(word,input_letter,number_dashes):
 
 	return (" ".join(number_dashes))
 	
-def guess_word()
+def guess_word():
     guessword = input("Type your guess?")
-    if guessword = word
-        you_win(player_lives,word)\
-    if guessword != word
+    if guessword == word:
+        you_win(player_lives,word)
+    if guessword != word:
         print("Try again!")
         input_letter()
 def you_lose(player_lives,word):
@@ -527,9 +530,7 @@ def visuals(player_lives):
 		"""	
 hangman()
  #runs hangman function
-
-        
-        
+	  
 ```
 
 
