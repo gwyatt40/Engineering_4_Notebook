@@ -319,11 +319,10 @@ for x in input(): # takes input, input is string, so x is character in string
   <details>
   <summary> Hangman Code </summary>
         
-``` 
 import sys
 import getpass
 def hangman():
-	print("Get ready to play Hangman!")
+	print("Hangman time!")
 	word=input("Player 1, input your word: ")
 
 	print('\n'*20)
@@ -331,7 +330,7 @@ def hangman():
 	start_game(word)
 
 def start_game(word):
-	player_lives = 6
+	player_lives = 7
 	used_letters =[]
 	number_dashes=["_" for i in range(len(word))]
 
@@ -352,6 +351,7 @@ def start_game(word):
 			print("Used letters:"," ".join(used_letters))
 			print((updated_dashes(word,input_letter,number_dashes,)),'')
 
+
 		elif input_letter  not in used_letters and input_letter in word:
 
 			print(visuals(player_lives))
@@ -362,8 +362,15 @@ def start_game(word):
 				pass
 			print("Used letters:"," ".join(used_letters))
 			print((updated_dashes(word,input_letter,number_dashes,)),'')
-
-		elif input_letter not in word :
+			
+			print("Press enter to guess word, press x to guess letter")
+            enter = input("")
+                if enter == '':  # hitting enter == ''  empty string
+                guess_word()
+            x = input("")
+                if x:
+                input_letter()
+            
 
 			player_lives-=1
 			print(visuals(player_lives))
@@ -402,7 +409,14 @@ def updated_dashes(word,input_letter,number_dashes):
 			number_dashes[i] = input_letter
 
 	return (" ".join(number_dashes))
-
+	
+def guess_word()
+    guessword = input("Type your guess?")
+    if guessword = word
+        you_win(player_lives,word)\
+    if guessword != word
+        print("Try again!")
+        input_letter()
 def you_lose(player_lives,word):
 
 	print("The guesser loses!","The word was",word)
@@ -415,11 +429,23 @@ def you_win(player_lives,word):
 
 def visuals(player_lives):
 
-	if player_lives == 6:
+	if player_lives == 7:
 		return"""
 		_______
 		|     |
 		|     
+		|
+		|
+		|
+		|
+		|________
+		|        |
+		"""
+	elif player_lives == 6:
+		return"""
+		_______
+		|     |
+		|     O
 		|
 		|
 		|
@@ -432,7 +458,7 @@ def visuals(player_lives):
 		_______
 		|     |
 		|     O
-		|
+		|     |
 		|
 		|
 		|
@@ -457,14 +483,14 @@ def visuals(player_lives):
 		|     |
 		|     O
 		|   --|--
-		|
+		|     
 		|
 		|
 		|________
 		|        |
 		"""
 	elif player_lives == 2:
-		return"""
+	    return"""
 		_______
 		|     |
 		|     O
@@ -497,11 +523,12 @@ def visuals(player_lives):
 		|    | |
 		|
 		|________
-		| D E A D|
+		|! D E A D !|
 		"""	
 hangman()
  #runs hangman function
 
+        
         
 ```
 
