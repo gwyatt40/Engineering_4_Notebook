@@ -313,10 +313,12 @@ for x in input(): # takes input, input is string, so x is character in string
 ## Hangman (MSP)
   #### Filename: hangman.py
   ### Description
-	Create a code that runs a game of hangman. One person inputs a word, and then another player guesses letters. If the player guesses all the letters correctly, they win. If they guess a letter wrong, the screen draws part of the hamgman, ad if the full hangman is drawn, the player loses.
+Create a code that runs a game of hangman. One person inputs a word, and then another player guesses letters. If the player guesses all the letters correctly, they win. If they guess a letter wrong, the screen draws part of the hangman, and if the full hangman is drawn, the player loses.
   ### Results
-  
-  ### Code
+  <img src="https://github.com/gwyatt40/Engineering_4_Notebook/blob/main/Images/Hangman1.png" alt="Strings and Loops Results" width="325" height="">
+  <img src="https://github.com/gwyatt40/Engineering_4_Notebook/blob/main/Images/Hangman%202.png" alt="Strings and Loops Results" width="325" height="">
+	
+### Code
   <details>
   <summary> Hangman Code </summary>
 	  
@@ -540,4 +542,4 @@ hangman()
 ### Reflection
   
 ### Helpful Links 
-  I sourced the entire code from [this Github Gist](https://gist.github.com/Petersonp/9aac42c7b3e577e952ac1f7b3523e370)
+I sourced the entire code from [this Github Gist](https://gist.github.com/Petersonp/9aac42c7b3e577e952ac1f7b3523e370)
