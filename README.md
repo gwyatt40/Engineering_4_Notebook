@@ -571,10 +571,13 @@ I sourced the entire code from [this Github Gist](https://gist.github.com/Peters
 
 <img src="https://github.com/gwyatt40/Engineering_4_Notebook/blob/main/Images/Skateboard%20CAD%20Wheel%20and%20Bearing.png" alt="Skateboard Wheel and Bearings Results" width="350" height="">
 	
-### Onshape Commands
-  
+### Onshape Tips
+  - Always name parts! Also name individual elements (sketches/extrudes/etc). *** I didn't for this assignment because the tutorial used default element names (ex. "Sketch 2") ***
+
+  - 
+
  
 ### Reflection
 
   
- ### Helpful Links
+### Helpful Links
