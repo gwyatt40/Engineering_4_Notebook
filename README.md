@@ -547,3 +547,25 @@ hangman()
   I found this code online and minorly changed it to make it fit my project. I removed the getpass() function from the player one input, altered the visuals, and added an additional player life so that the hangman drawing made more sense (one arm at a time instead of both). I attempted to delete certain portions of the code that I thought seemed repetitive, but found that they were necessary for consistently printing the dashes and used letters (see code comments). If I were to spend more time on this project I would add in an option to guess the word after every correct letter guess, which I attempted initially but found that it would require substantial reworking of the rest of the code. 
 ### Helpful Links 
 I sourced the entire code from [this Github Gist](https://gist.github.com/Petersonp/9aac42c7b3e577e952ac1f7b3523e370)
+	
+
+ ## Skateboard (CAD Intro 2.1-2.4)
+	
+ 
+ #### File: [Skateboard](https://cvilleschools.onshape.com/documents/1da03e0163ff9ca5442c99a6/w/6468065e9e72fb573e9fa934/e/dcb6e77e42efeebf0c3d7371?renderMode=0&uiState=6176b2331d0d684e60e85501)
+ 
+ ### Description 
+   Building the deck, wheel, and trucks of a skateboard in Onshape following [this tutorial](https://cvilleschools.onshape.com/documents/ce5ac8909ec93f2ab937afda/w/77af2f4715cd6b9dc0f3d968/e/1cf175a4a9e7faeb7db52e25)
+ 
+ ### Results
+- Full Assembly
+  <img src="" alt="Strings and Loops Results" width="325" height="">
+
+- 
+### Onshape Commands
+  
+ 
+### Reflection
+
+  
+ ### Helpful Links
