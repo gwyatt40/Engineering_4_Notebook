@@ -558,10 +558,19 @@ I sourced the entire code from [this Github Gist](https://gist.github.com/Peters
    Building the deck, wheel, and trucks of a skateboard in Onshape following [this tutorial](https://cvilleschools.onshape.com/documents/ce5ac8909ec93f2ab937afda/w/77af2f4715cd6b9dc0f3d968/e/1cf175a4a9e7faeb7db52e25)
  
  ### Results
-- Full Assembly
-  <img src="" alt="Strings and Loops Results" width="325" height="">
+#### Full Assembly
+<img src="https://github.com/gwyatt40/Engineering_4_Notebook/blob/main/Images/Skateboard%20CAD%20Full%20Assembly.png" alt="Skateboard Assembly Results" width="375" height="">
 
-- 
+#### Deck
+ <img src="https://github.com/gwyatt40/Engineering_4_Notebook/blob/main/Images/Skateboard%20CAD%20Deck%20.png" alt="Skateboard Deck Results" width="375" height="">
+
+#### Trucks 
+  <img src="https://github.com/gwyatt40/Engineering_4_Notebook/blob/main/Images/Skateboard%20CAD%20Trucks%20.png" alt="Skateboard Trucks Results" width="250" height="">
+
+#### Wheel and Bearing 
+
+<img src="https://github.com/gwyatt40/Engineering_4_Notebook/blob/main/Images/Skateboard%20CAD%20Wheel%20and%20Bearing.png" alt="Skateboard Wheel and Bearings Results" width="350" height="">
+	
 ### Onshape Commands
   
  
