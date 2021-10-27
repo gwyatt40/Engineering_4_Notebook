@@ -572,12 +572,26 @@ I sourced the entire code from [this Github Gist](https://gist.github.com/Peters
 <img src="https://github.com/gwyatt40/Engineering_4_Notebook/blob/main/Images/Skateboard%20CAD%20Wheel%20and%20Bearing.png" alt="Skateboard Wheel and Bearings Results" width="350" height="">
 	
 ### Onshape Tips
-  - Always name parts! Also name individual elements (sketches/extrudes/etc). *** I didn't for this assignment because the tutorial used default element names (ex. "Sketch 2") ***
+  - Always name parts! Also name individual features (sketches/extrudes/etc). 
+  - Can extrude a sketch without having to close the sketch and reselect it 
 
-  - 
+  - Pressing the 'N' key rotates to normal view
+	
+  - Offset tool to start new geometry a specific distance and angle away from a sketch
+	
+  - You can select to insert an entire part studio into an assembly
+	
+  - 'Flip primary axis' to rotate fasten mates
+	
+  - Make sure to select the correct mate connectors
 
  
 ### Reflection
+- I didn't specifically name features for this assignment because the tutorial used default element names (ex. "Sketch 2"), but for future assignments without a tutorial I definitely will. 
 
-  
-### Helpful Links
+- I initially tried to use Onshape on my Chromebook but found that it is much easier on a desktop with a mouse
+
+- Using view shortcuts ('N' key for normal) and selecting faces to rotate to saves time 
+	
+- This assignment was mostly an overview of skills I'd used in the past with Onshape. It was most helpful to be reminded of how to use Onshape's assemblies, which I had had limited practice with. Mate connectors especially were important to review.
+	
