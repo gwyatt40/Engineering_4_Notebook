@@ -595,3 +595,22 @@ I sourced the entire code from [this Github Gist](https://gist.github.com/Peters
 	
 - This assignment was mostly an overview of skills I'd used in the past with Onshape. It was most helpful to be reminded of how to use Onshape's assemblies, which I had had limited practice with. Mate connectors especially were important to review.
 	
+## Bricks and Configurations (CAD Intro 3.1-3.4)
+
+#### File: [Bricks](https://cvilleschools.onshape.com/documents/f94d2454fca8e82433d22c88/w/f71befabc11c5a68117b7ec1/e/c65758b4e27f55fd2208b800?configuration=List_3hIsBFnRiF81ll%3D_1x4%3BList_5jXFJwDC3SGwnX%3DPlate%3BList_sOrjlIFxJ9oFKv%3DDefault&renderMode=0&rightPanel=configPanel&uiState=6183e98ca6a3d440b44865b5)
+ 
+### Description
+Build a 2x4 Lego brick (3.1), create configurations for its size and color (3.2), use configured bricks to build a Lego duck (3.3), and create a set of instructions in OnShape drawings for building with bricks (3.4). 
+	
+### Results
+
+### OnShape Tips
+- Typing '#' while in dimension allows you to create a new variable immediately or to call an old one (3.1)
+- Pay attention to automatic constraints (yellow lines when sketching), avoid these if unwanted (3.1)
+- Variables can be added/subtracted/multiplied/divided by or with other values in dimensions (ex. 1.8mm-#height) (3.1)
+
+### Reflection 
+
+### Reflection
+	
+
