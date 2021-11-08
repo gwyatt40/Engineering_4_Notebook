@@ -608,9 +608,15 @@ Build a 2x4 Lego brick (3.1), create configurations for its size and color (3.2)
 - Typing '#' while in dimension allows you to create a new variable immediately or to call an old one (3.1)
 - Pay attention to automatic constraints (yellow lines when sketching), avoid these if unwanted (3.1)
 - Variables can be added/subtracted/multiplied/divided by or with other values in dimensions (ex. 1.8mm-#height) (3.1)
+-
+- Snap mates involve left-clicking and dragging mate connectors together. Q key to rotate. Check box to fasten. (3.3)
+
 
 ### Reflection 
+- 3.1: I learned how to create and assign variables for part dimensions. I also learned how to create mate connectors and assign them coordinates. The most difficult part of this was making sure that variable values were in the correct order, for example "8*#cols" instead of "8#*cols. 
+- 3.2: 
+- 3.3: I learned how to use snap mates in an assembly which makes assemblies much easier by allowing you to drag together mate connectors. I also learned how to drag to select assembly parts in order to select center of mass and also how to set center of mass relative to a mate connector. The most difficult part of this section was ensuring that the correct mate connectors were snapped together. 
+- 3.4 
 
-### Reflection
 	
 
