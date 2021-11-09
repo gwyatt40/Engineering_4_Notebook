@@ -596,6 +596,17 @@ Build a 2x4 Lego brick (3.1), create configurations for its size and color (3.2)
 	
 ### Results
 
+#### Examples of Brick Configurations
+<img src="https://github.com/gwyatt40/Engineering_4_Notebook/blob/main/Images/Brick%20Configuration%201.png" alt="Brick Configuration 1" width="250" height="125"><img src="https://github.com/gwyatt40/Engineering_4_Notebook/blob/main/Images/Brick%20Configuration%202.png" alt="Brick Configuration 2" width="250" height="125">
+	
+	
+<img src="https://github.com/gwyatt40/Engineering_4_Notebook/blob/main/Images/Brick%20Configuration%203.png" alt="Brick Configuration 3" width="250" height="125"><img src="https://github.com/gwyatt40/Engineering_4_Notebook/blob/main/Images/Brick%20Configuration%204.png" alt="Brick Configuration 3" width="250" height="125">
+
+
+#### Brick Duck 
+<img src="https://github.com/gwyatt40/Engineering_4_Notebook/blob/main/Images/Brick%20Duck.png" alt="Brick Configuration 3" width="450" height="325">
+
+	
 ### OnShape Tips
 - Typing '#' while in dimension allows you to create a new variable immediately or to call an old one (3.1)
 - Pay attention to automatic constraints (yellow lines when sketching), avoid these if unwanted (3.1)
@@ -615,5 +626,5 @@ Build a 2x4 Lego brick (3.1), create configurations for its size and color (3.2)
 - 3.3: I learned how to use snap mates in an assembly which makes assemblies much easier by allowing you to drag together mate connectors. I also learned how to drag to select assembly parts in order to select center of mass and also how to set center of mass relative to a mate connector. The most difficult part of this section was ensuring that the correct mate connectors were snapped together. 
 - 3.4: 
 
-	
+
 
