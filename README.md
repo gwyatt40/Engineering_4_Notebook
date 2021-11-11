@@ -606,7 +606,11 @@ Build a 2x4 Lego brick (3.1), create configurations for its size and color (3.2)
 #### Brick Duck 
 <img src="https://github.com/gwyatt40/Engineering_4_Notebook/blob/main/Images/Brick%20Duck.png" alt="Brick Configuration 3" width="450" height="325">
 
+#### Brick Duck Drawings
 	
+<img src="https://github.com/gwyatt40/Engineering_4_Notebook/blob/main/Images/Brick%20Duck%20Drawing%201.png" alt="Brick Duck Drawing 1" width="450" height="325"> <img src="https://github.com/gwyatt40/Engineering_4_Notebook/blob/main/Images/Brick%20Duck%20Drawing%202.png" alt="Brick Duck Drawing 2" width="450" height="325">
+
+
 ### OnShape Tips
 - Typing '#' while in dimension allows you to create a new variable immediately or to call an old one (3.1)
 - Pay attention to automatic constraints (yellow lines when sketching), avoid these if unwanted (3.1)
@@ -618,13 +622,19 @@ Build a 2x4 Lego brick (3.1), create configurations for its size and color (3.2)
 - Certain features such as [Part Color](https://cvilleschools.onshape.com/documents/d997b0ffc30f659113b10c00/v/347f7240ed6eefd77e80907e/e/a59f52547080e509330b02f7) and [Part Name](https://cvilleschools.onshape.com/documents/f4d470584fdeef9603415532/v/0c632933b6aca3d2608fda5d/e/acddbbed81af3772a07adf21) must be added in from their seperate pages (3.2) 
 - Snap mates involve left-clicking and dragging mate connectors together. Q key to rotate. Check box to fasten. (3.3)
 - Selecting 'mass relative to mate connector' and choosing a mate connector in the mass properties tab allows you to find the center of mass relative to that mate connector (3.3) 
+- Right-click selecting an assembly in the tool bar will allow you to create a drawing of that assembly (3.4)
+- Right-selecting a view in the drawing and selecting 'show/hide' will allow you to add/remove shading (3.4)
+- The bill of materials (BOM) is located and can be edited in the right tab of an assembly above the configurations tab (3.4)
+- The orange reload button at the top left of the drawing page refreshes the drawing and updates it with changes from edits to parts and assemblies (3.4)
+- Checking/unchecking the 'explode lines' box in an explode feature ('Explode 1') allows you to add/remove explode lines (3.4)
+- To create callouts you must select the edge or vertex of a part, not the face (3.4)
 
 
 ### Reflection 
 - 3.1: I learned how to create and assign variables for part dimensions. I also learned how to create mate connectors and assign them coordinates. The most difficult part of this was making sure that variable values were in the correct order, for example "8*#cols" instead of "8#*cols. 
 - 3.2: I learned how to create configurations by selecting certain features in the configurations tab, which was really mostly review. The part of this section that was new to me was having to add in certain configuration types (part name and part color) from seperate pages. 
 - 3.3: I learned how to use snap mates in an assembly which makes assemblies much easier by allowing you to drag together mate connectors. I also learned how to drag to select assembly parts in order to select center of mass and also how to set center of mass relative to a mate connector. The most difficult part of this section was ensuring that the correct mate connectors were snapped together. 
-- 3.4: 
+- 3.4: I learned how to create drawings of assemblies in OnShape, a feature which I did not know existed before this assignment. The most difficult part of this section was organizing features within the drawings to make them presentable, and ensuring that the features themselves were composed correctly (exploded view was mostly equidistant, etc.). 
 
 
 
