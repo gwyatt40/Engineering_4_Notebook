@@ -33,7 +33,7 @@ Prints text “Hello World!” 10 times, each on a new line.
 >>>
 - exit () - exit python interpreter 
 - nano filename.py to open a python file (must be in terminal) 
-- python filename.py - runs this python file 
+- python3 filename.py - runs this python file 
 - clear - clears terminal screen (but saves info, directories etc) 
 - SHUTDOWN: sudo shutdown -h now
 - sudo nano /etc/profile add export TERM=xterm to bottom of file save, exit, and reboot py for color change
@@ -59,7 +59,7 @@ Connection to github push readme and python files.
 - git commit -m “message” - commits files with message
 - git push origin main - push changes to git 
 - Username - gwyatt40
-- PAT Access (password): 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 (copy with no spaces!!!!!)  
+- PAT Access (password): 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 (copy with no spaces!!!!!)  
 - Copy (from outside): ctrl+C Paste(into BeagleTerm): ctrl+shift+V
 
 ## Hello Python
