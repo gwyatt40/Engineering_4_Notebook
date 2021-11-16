@@ -59,7 +59,7 @@ Connection to github push readme and python files.
 - git commit -m “message” - commits files with message
 - git push origin main - push changes to git 
 - Username - gwyatt40
-- PAT Access (password): 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 (copy with no spaces!!!!!)  
+- PAT Access: found in PAT code document, cannot commit this code into git readme
 - Copy (from outside): ctrl+C Paste(into BeagleTerm): ctrl+shift+V
 
 ## Hello Python
