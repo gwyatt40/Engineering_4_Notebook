@@ -37,6 +37,7 @@ Prints text “Hello World!” 10 times, each on a new line.
 - clear - clears terminal screen (but saves info, directories etc) 
 - SHUTDOWN: sudo shutdown -h now
 - sudo nano /etc/profile add export TERM=xterm to bottom of file save, exit, and reboot py for color change
+- ctrl+C to exit running a file
 ### Python Commands 
 - print (“Hello World!”) - prints text in quotations 
 - ctrl x, y, enter - save and exit python file editor 
