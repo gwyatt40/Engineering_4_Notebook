@@ -638,4 +638,56 @@ Build a 2x4 Lego brick (3.1), create configurations for its size and color (3.2)
 - 3.4: I learned how to create drawings of assemblies in OnShape, a feature which I did not know existed before this assignment. The most difficult part of this section was organizing features within the drawings to make them presentable, and ensuring that the features themselves were composed correctly (exploded view was mostly equidistant, etc.). 
 
 
+## GPIO LED Blink 
+#### File: [led1.py](https://github.com/gwyatt40/Engineering_4_Notebook/blob/main/Python/led1.py)
+	
+### Description 
+Use GPIO pins on a Raspberry Pi to alternate blinking two LEDS, print which LEDs are on an which are off, blinking should continue until ctrl+c exits program. 
+	
+### Results
+	
+### Code 
+	
+<details>
+  <summary> LED Blink Code </summary>
+        
+``` 
 
+# Python Program - LED BLINK
+# Georgia Wyatt
+# 11/30/21
+
+# import LED and time libraries
+from gpiozero import LED
+from time import sleep
+
+# assign pins
+led1 = LED(21)
+led2 = LED(13)
+
+while True: # loops constantly until ctrl+C
+    led1.on() # red on
+    led2.off() # green off 
+    print("RED ON, green off") # prints to screen
+    sleep(1) # 1 second pause
+    led1.off() # red off 
+    led2.on() # green on 
+    print("red off, GREEN ON") # prints to screen
+    sleep(1) # 1 second pause
+	
+	
+```
+</details>
+
+### Reflection
+- Must indent using either all spaces or all tabs, using both results in an error
+- LED Wiring: PIN- Positive-LED-Negative-Ground
+- Remember to git pull before pushing 
+- Don't alter wiring at all while Pi is still on and plugged into computer! 
+- while True loops will only cancel with ctrl+c unless exit function is added to the code
+- Instead of printing to a separate serial monitor like with arduino, running print functions in Python prints to the main screen
+- Must import sleep "from time input sleep" in order to use sleep functions
+- Must import GPIO LED "from gpiozero import LED" to use led.on() and led.off() functions with GPIO pins
+
+### Helpful Links
+- I based my code around [this LED blink code](https://www.tunnelsup.com/raspberry-pi-zero-blink-an-led-using-gpio-pins/) from tunnelsup.com
