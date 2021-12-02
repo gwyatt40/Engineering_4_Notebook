@@ -786,3 +786,6 @@ reaches a value above 4, we will restart.
 	
 ```
 </details>	
+	
+### Reflection
+- If ctrl+C doesn't work to stop running code, try ctrl + Z 
