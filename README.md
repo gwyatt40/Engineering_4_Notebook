@@ -645,6 +645,15 @@ Build a 2x4 Lego brick (3.1), create configurations for its size and color (3.2)
 Use GPIO pins on a Raspberry Pi to alternate blinking two LEDS, print which LEDs are on an which are off, blinking should continue until ctrl+c exits program. 
 	
 ### Results
+
+#### Print Screen
+<img src="https://github.com/gwyatt40/Engineering_4_Notebook/blob/main/Images/LEDBlinkPrint.png" alt="LED Print" height="300">
+
+#### LED 1 On
+<img src="https://github.com/gwyatt40/Engineering_4_Notebook/blob/main/Images/LED%20Blink%201.png" alt="LED 1 On" width="400" >
+
+#### LED 2 On
+<img src="https://github.com/gwyatt40/Engineering_4_Notebook/blob/main/Images/LED%20Blink%202.png" alt="LED 2 On" width="400" height="350">
 	
 ### Code 
 	
@@ -678,6 +687,11 @@ while True: # loops constantly until ctrl+C
 	
 ```
 </details>
+
+#### Wiring
+- Connecting the positive side of LED 1 to pin 21 and the negative to a resistor to ground. 
+- Connecting the positive side of LED 2 to pin 13 and the negative to a resistor to ground. 
+- Pictured in results images above. 
 
 ### Reflection
 - Must indent using either all spaces or all tabs, using both results in an error
