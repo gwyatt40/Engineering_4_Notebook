@@ -709,38 +709,32 @@ while True: # loops constantly until ctrl+C
 ## RPi Safe Shutdown Button 
 	
 #### File: [shutdown.py](https://github.com/gwyatt40/Engineering_4_Notebook/blob/main/Python/shutdown.py)
+
+### Description
+Wire a button with a shutdown code so that pressing the button shutsdown or restarts the pi automatically. Then, encode the script so that it automatically runs in the background and the pi will be shutdown/restart whenever the button is pressed. 
+
+### Results
+#### Button wiring 
+<img src="https://github.com/gwyatt40/Engineering_4_Notebook/blob/main/Images/shutdown_button%20.jpg" alt="Shutdown Button Wiring" width="400">
 	
 ### Code 
+	
 <details>
   <summary> Safe Shutdown Code </summary>
         
 ``` 
-
-
-# safe_restart_shutdown_interrupt_Pi.py
-#
-# Raspberry Pi Safe Restart and Shutdown Python Script
-# WRITTEN BY: Matthew Miller @ CHS
-# MODIFIED: 11/30/2021
-# DESCRIPTION: This python script uses a button to safely
-# reboot/shutdown your RPi. A momentary press reboots the pi,
-# holding the button shuts the RPi down. 
-#
-# Based on code from the following tutorial:
-#https://learn.sparkfun.com/tutorials/raspberry-pi-safe-reboot-and-shutdown-button/
-all
-#-------------------------------------------------
+# import time and GPIO 
 import time
 import RPi.GPIO as GPIO 
-# Pin definition
-reset_shutdown_pin = 26
-# Suppress warnings
+# set pin 
+reset_shutdown_pin = 18 # changed from original pin
+# suppress warnings
 GPIO.setwarnings(False)
-# Use "GPIO" pin numbering
+# GPIO Mode for pin numbers 
 GPIO.setmode(GPIO.BCM)
-# Use built-in internal pullup resistor so the pin is not floating
+# use internal pull up resistor 
 GPIO.setup(reset_shutdown_pin, GPIO.IN, pull_up_down=GPIO.PUD_UP)
-# modular function to restart Pi
+# define restart function 
 def restart():
     print("restarting Pi")
     command = "/usr/bin/sudo /sbin/shutdown -r now"
@@ -748,21 +742,18 @@ def restart():
     process = subprocess.Popen(command.split(), stdout=subprocess.PIPE)
     output = process.communicate()[0]
     print(output)
-# modular function to shutdown Pi
+# define shutdown function 
 def shut_down():
     print("shutting down")
-    command = "/usr/bin/sudo /sbin/shutdown -h now"
+    command = "/usr/bin/sudo /sbin/shutdown -h now" #shutdown command 
     import subprocess
     process = subprocess.Popen(command.split(), stdout=subprocess.PIPE)
     output = process.communicate()[0]
     print(output)
 while True:
-    #short delay, otherwise this code will take up a lot of the Pi's processing 
-power
+    # delay so doesn't use too much processing power 
     time.sleep(0.5)
-    # wait for a button press with switch debounce on the falling edge so that this
-script
-    # is not taking up too many resources in order to shutdown/reboot the Pi safely
+    # waits for button press w/ debounce 
     channel = GPIO.wait_for_edge(reset_shutdown_pin, GPIO.FALLING, bouncetime=200)
     if channel is None:
         print('Timeout occurred')
@@ -778,14 +769,18 @@ reaches a value above 4, we will restart.
             #print(counter)
             counter += 1
             time.sleep(0.5)
-            # long button press
+            # long button press = shutdown 
             if counter > 4:
-                shut_down()
-        #if short button press, restart!
-        restart()
+                shut_down() # run shutdown function 
+        # short button press = restart
+        restart() # run restart function 
 	
 ```
 </details>	
 	
 ### Reflection
+- Code was from Mr. Miller, posted on the [Canvas page for this assignment](https://cvilleschools.instructure.com/courses/35089/assignments/442634?module_item_id=1665698), the only change was the pin number 
 - If ctrl+C doesn't work to stop running code, try ctrl + Z 
+- Debounce is the amount of time that the button does not register another click 
+- Editing rc.local file allows you to run code in the background of your pi 
+- Always double check pins, especially when using codes from other sources!
