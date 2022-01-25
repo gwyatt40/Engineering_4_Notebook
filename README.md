@@ -784,3 +784,96 @@ reaches a value above 4, we will restart.
 - Debounce is the amount of time that the button does not register another click 
 - Editing rc.local file allows you to run code in the background of your pi 
 - Always double check pins, especially when using codes from other sources!
+	
+## GPIO Pins - I2C 
+	
+#### File: [gpio_pins.py]()
+
+### Description
+
+
+### Results
+
+<img src="" alt="" width="">
+	
+### Code 
+	
+<details>
+  <summary> GPIO Code </summary>
+        
+``` 
+	
+```
+</details>	
+	
+### Reflection
+
+## Headless Accelerometer
+	
+#### File: [accelerometer.py]()
+
+### Description
+
+
+### Results
+
+<img src="" alt="" width="">
+	
+### Code 
+	
+<details>
+  <summary> Accelerometer Code </summary>
+        
+``` 
+	
+```
+</details>	
+	
+### Reflection
+	
+## Pi Camera
+
+#### File: [pi_camera.py]()
+
+### Description
+
+
+### Results
+
+<img src="" alt="" width="">
+	
+### Code 
+	
+<details>
+  <summary> Pi Camera Code </summary>
+        
+``` 
+	
+```
+</details>	
+	
+### Reflection
+
+## Copypasta
+
+#### File: [copypasta.py]()
+
+### Description
+
+
+### Results
+
+<img src="" alt="" width="">
+	
+### Code 
+	
+<details>
+  <summary> Copypasta Code </summary>
+        
+``` 
+	
+```
+</details>	
+	
+### Reflection
+
