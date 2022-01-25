@@ -808,6 +808,8 @@ reaches a value above 4, we will restart.
 	
 ### Reflection
 
+- Pathway to Python files in Engineering 4 Notebook is Documents/Engineering_4_Notebook/Python (use cd to navigate)
+
 ## Headless Accelerometer
 	
 #### File: [accelerometer.py]()
