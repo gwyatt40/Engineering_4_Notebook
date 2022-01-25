@@ -790,7 +790,7 @@ reaches a value above 4, we will restart.
 #### File: [gpio_pins.py]()
 
 ### Description
-
+The goal of this assignment is to use GPIO pins to allow the Raspberry Pi to recieve data from two different devices, in this case an accelerometer and a LCD display. Downloading an Adafruit LSM303 library. 
 
 ### Results
 
