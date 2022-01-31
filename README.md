@@ -794,12 +794,14 @@ The goal of this assignment is to use GPIO pins to allow the Raspberry Pi to rec
 
 ### Results
 
-<img src="" alt="" width="">
+<img src="https://github.com/gwyatt40/Engineering_4_Notebook/blob/main/Images/Accelerometer%20Wiring.jpg" alt="Accelerometer Wiring" width="350">
+
+- Wiring: Accelerometer- Vin to 3.3 V, GND to GND, SDA to SDA, and SCL to SCL. LCD- Vin to 3.3 V, GND to GND, Data to SDA, Clk to SCL, and RST to pin 24
 	
 ### Code 
 	
 <details>
-  <summary> GPIO Code </summary>
+  <summary> Accelerometer Code </summary>
         
 ``` 
 import time
@@ -875,7 +877,12 @@ This assignment required wiring up a camera to the Raspberry Pi and then creatin
 	[Negative](https://github.com/gwyatt40/Engineering_4_Notebook/blob/main/Python/negative_pic3.jpg), 
 	[Oil Paint](https://github.com/gwyatt40/Engineering_4_Notebook/blob/main/Python/oilpaint_pic4.jpg), 
 	[Sketch](https://github.com/gwyatt40/Engineering_4_Notebook/blob/main/Python/sketch_pic5.jpg)
-- Camera Wiring: 
+- Camera Wiring: The camera uses a small, golden connection strip which slides horizontally into the pi camera port. 
+<img src="https://github.com/gwyatt40/Engineering_4_Notebook/blob/main/Images/Camera%20Wiring.jpg" alt="Camera Wiring" width="350">
+	
+- Clearer wiring image from the [Raspberry Pi website](https://www.raspberrypi.com/news/zero-grows-camera-connector/): 
+	
+<img src="https://github.com/gwyatt40/Engineering_4_Notebook/blob/main/Images/Camera%20WIring%202.jpg" alt="Camera Wiring 2" width="350">
 
 	
 ### Code 
@@ -954,6 +961,7 @@ with picamera.PiCamera() as camera:
 ### Reflection
 - 'Camera' had to be enabled under configurations settings (sudo raspi-config)
 - The smaller, gold camera strips are meant for Raspberry Pis 
+- With the gold connector strip, the camera connects into with the pi port horizontally, not vertically as is shown on some websites
 - Some camera effects require assigned values (the list is found at the effects link below), none of the effects I selected required values.
 - The code for Camera Code 02 is definitely much longer and more repetitive than it should be, this is because I copypasted the same section of code for each of the 5 effects and did not bother to test if I could include all of the photos under a single "with ... as camera:" and not have to set the resolution, etc, every time a new photo is taken. If I spent more time on this assignment, I would simplify the code. 
 - The preview display screen did not appear for me, so I could not see the photos I took before I took them. The photos I took are not very good and are of nothing in particular, but they show the changes caused by different effects and that the camera is functional. 
@@ -965,13 +973,17 @@ with picamera.PiCamera() as camera:
 #### File: [stopmotionvid.py](https://github.com/gwyatt40/Engineering_4_Notebook/blob/main/Python/stopmotion/stopmotionvid.py)
 
 ### Description
-This assignment involves wiring a button to the pi camera set up so that a photo is taken when the button is pressed. Then, several photos are taken and compiled together to create a stopmotion animation video. 
+This assignment involves wiring a button to the pi camera set up so that a photo is taken when the button is pressed. Then, many consecutively taken photos in a folder are compiled together in order using python terminal commands to create a stopmotion animation video. 
 
 ### Results
 - Video: [stopmotion.mp4](https://github.com/gwyatt40/Engineering_4_Notebook/blob/main/Python/stopmotion/stopmotion.mp4)
 	** May have to download to view ** 
-- Wiring: See wiring for above assignment (Pi Camera)
-
+- Wiring: Button to pin 17, camera to horizontal camera sideport on pi (see assignment above for additional images)
+- Camera + Button Wiring: 
+<img src="https://github.com/gwyatt40/Engineering_4_Notebook/blob/main/Images/Camera%20%2B%20Button%20Wiring.jpg" alt="Camera + Button" width="400">
+	
+- Button Wiring: 
+<img src="https://github.com/gwyatt40/Engineering_4_Notebook/blob/main/Images/Button%20Wiring.jpg" alt="Camera + Button" width="400">
 	
 ### Code 
 	
