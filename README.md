@@ -870,14 +870,24 @@ The first part of this assignment involves altering the code from the previous a
 	
 ## Pi Camera
 
-#### File: [pi_camera.py]()
+#### File: []()
 
 ### Description
-
+This assignment required wiring up a camera to the Raspberry Pi and then creating two different codes, one that would use the camera to take a picture and then save the file, and another that would capture and save 5 different photos, each with a different applied effect. 
 
 ### Results
+- Example photo with a 'negative' effect
 
-<img src="" alt="" width="">
+<img src="https://github.com/gwyatt40/Engineering_4_Notebook/blob/main/Python/negative_pic3.jpg" alt="Negative Image" width="350">
+
+- The rest of the photos are linked here: 
+	[Pastel](https://github.com/gwyatt40/Engineering_4_Notebook/blob/main/Python/pastel_pic1.jpg), 
+	[Cartoon](https://github.com/gwyatt40/Engineering_4_Notebook/blob/main/Python/cartoon_pic2.jpg), 
+	[Negative](https://github.com/gwyatt40/Engineering_4_Notebook/blob/main/Python/negative_pic3.jpg), 
+	[Oil Paint](https://github.com/gwyatt40/Engineering_4_Notebook/blob/main/Python/oilpaint_pic4.jpg), 
+	[Sketch](https://github.com/gwyatt40/Engineering_4_Notebook/blob/main/Python/sketch_pic5.jpg)
+- Camera Wiring: 
+
 	
 ### Code 
 	
@@ -953,10 +963,13 @@ with picamera.PiCamera() as camera:
 </details>	
 	
 ### Reflection
-
+- 'Camera' had to be enabled under configurations settings (sudo raspi-config)
+- The smaller, gold camera strips are meant for Raspberry Pis 
 - Some camera effects require assigned values (the list is found at the effects link below), none of the effects I selected required values.
 - The code for Camera Code 02 is definitely much longer and more repetitive than it should be, this is because I copypasted the same section of code for each of the 5 effects and did not bother to test if I could include all of the photos under a single "with ... as camera:" and not have to set the resolution, etc, every time a new photo is taken. If I spent more time on this assignment, I would simplify the code. 
 - The preview display screen did not appear for me, so I could not see the photos I took before I took them. The photos I took are not very good and are of nothing in particular, but they show the changes caused by different effects and that the camera is functional. 
+- I copied the basic code for this assignment from section 4.1 of [this webpage](https://picamera.readthedocs.io/en/release-1.10/recipes1.html) which was linked on the Canvas page for this assignment. 
+- [This link](https://picamera.readthedocs.io/en/release-1.10/api_camera.html#picamera.camera.PiCamera.image_effect) was provided on the Canvas page and listed different camera effects and their required parameters. 
 
 ## Copypasta
 
