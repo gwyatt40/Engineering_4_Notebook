@@ -25,7 +25,7 @@ while True:
     # reads acceleration 
     accel, mag = lsm303.read()
     # sets acceleration values as variables
-    accel_x, accel_y, accel_z = accel
+    accel_x, accel_y, accel_z = accel # divide these values by 10 for m/s^2
     mag_x, mag_y, mag_z = mag
     # writes acceleration values to LCD screen
     draw.text('Accel X={0}, Accel Y={1}, Accel Z={2}, Mag X={3}, Mag Y={4}, Mag Z={$
