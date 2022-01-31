@@ -829,7 +829,7 @@ while True:
     # reads acceleration 
     accel, mag = lsm303.read()
     # sets acceleration values as variables
-    accel_x, accel_y, accel_z = accel
+    accel_x, accel_y, accel_z = accel # divide accel values by 10 for m/s^2
     mag_x, mag_y, mag_z = mag
     # writes acceleration values to LCD screen
     draw.text('Accel X={0}, Accel Y={1}, Accel Z={2}, Mag X={3}, Mag Y={4}, Mag Z={$
@@ -842,35 +842,24 @@ while True:
 ### Reflection
 
 - Pathway to Python files in Engineering 4 Notebook is Documents/Engineering_4_Notebook/Python (use cd to navigate)
+- This assignment requires multiple wires to be connected to the same channels on the T-Cobbler (3.3 V, SDA, SCL). This can be accomplished by connecting wires in line with the channel one after the other (see wiring). 
+- I forgot to convert the accelerometer values to m/s² as part of this assignment. To do this, I would have divided these values by 10 before they were printed (see code comments). 
+- The command sudo i2cdetect -y 1 allows you to view I2C connection addresses for your pi. It does not say which device is connected to what address, so it is best to record I2C addresses each time a new device is added in case this information is needed in code later.
+- I looked over old githubs from previous years to help with the code of this assignment, mainly Rowan's, [linked here](https://github.com/rmiller85/Engineering_4_Notebook/blob/main/I2C_intro.py)
+
 
 ## Headless Accelerometer
-
-
 	
-#### File: [accelerometer.py]()
+#### File: N/A
 
 ### Description
 The first part of this assignment involves altering the code from the previous assignment so that instead of being displayed as numerical values, acceleration is shown on the LCD screen as a visual representation (ex. a circle changing size). Then, Systemd is used to detach the Rasperry Pi from the computer, so that the script runs automatically. Finally, the Raspberry Pi is connected to a battery via power boost 500c. 
 
-### Results
-
-<img src="" alt="" width="">
-	
-### Code 
-	
-<details>
-  <summary> Accelerometer Code </summary>
-        
-``` 
-	
-```
-</details>	
-	
-### Reflection
 	
 ## Pi Camera
 
-#### File: []()
+#### File: [Pi Camera 01](https://github.com/gwyatt40/Engineering_4_Notebook/blob/main/Python/camera_test_01.py), [Pi Camera 02](https://github.com/gwyatt40/Engineering_4_Notebook/blob/main/Python/camera_test_02.py)
+	
 
 ### Description
 This assignment required wiring up a camera to the Raspberry Pi and then creating two different codes, one that would use the camera to take a picture and then save the file, and another that would capture and save 5 different photos, each with a different applied effect. 
@@ -915,7 +904,7 @@ with picamera.PiCamera() as camera:
   <summary> Pi Camera Code 02 </summary>
         
 ``` 
- import time # imports time libraries necessary for pauses 
+import time # imports time libraries necessary for pauses 
 import picamera # imports camera libraries 
 
 print("Running") # displays constantly while camera is running 
@@ -971,26 +960,49 @@ with picamera.PiCamera() as camera:
 - I copied the basic code for this assignment from section 4.1 of [this webpage](https://picamera.readthedocs.io/en/release-1.10/recipes1.html) which was linked on the Canvas page for this assignment. 
 - [This link](https://picamera.readthedocs.io/en/release-1.10/api_camera.html#picamera.camera.PiCamera.image_effect) was provided on the Canvas page and listed different camera effects and their required parameters. 
 
-## Copypasta
+## Stopmotion Camera (Copypasta)
 
-#### File: [copypasta.py]()
+#### File: [stopmotionvid.py](https://github.com/gwyatt40/Engineering_4_Notebook/blob/main/Python/stopmotion/stopmotionvid.py)
 
 ### Description
-
+This assignment involves wiring a button to the pi camera set up so that a photo is taken when the button is pressed. Then, several photos are taken and compiled together to create a stopmotion animation video. 
 
 ### Results
+- Video: [stopmotion.mp4](https://github.com/gwyatt40/Engineering_4_Notebook/blob/main/Python/stopmotion/stopmotion.mp4)
+	** May have to download to view ** 
+- Wiring: See wiring for above assignment (Pi Camera)
 
-<img src="" alt="" width="">
 	
 ### Code 
 	
 <details>
-  <summary> Copypasta Code </summary>
+  <summary> Stopmotion Code </summary>
         
 ``` 
+from picamera import PiCamera # imports camera libraries
+from time import sleep # imports time libaries 
+from gpiozero import Button # imports button libraries
+
+button = Button(17) # sets button pin 17
+camera = PiCamera() # sets camera 
+
+camera.start_preview() # starts preview display 
+frame = 1 # sets intial frame #
+while True:
+    try:
+        button.wait_for_press()
+        camera.capture('frame%03d.jpg' % frame) # takes photo and names image with frame number
+        frame += 1 # increases frame number by one 
+    except KeyboardInterrupt: # KeyboardInterrupt stops camera
+        camera.stop_preview() # stops preview display 
+        break
 	
 ```
 </details>	
 	
 ### Reflection
-
+- The code and instructions for this project can be found at [this link](https://projects.raspberrypi.org/en/projects/push-button-stop-motion/7) 
+- Since I couldn't get the preview screen to work for me, I couldn't preview my pictures before taking them. I also didn't take as many pictures as would be necessary for a real stop motion video, which led to my video being very low quality. If I were to redo this assignment, I would take many more pictures and would try to get the preview screen to work. 
+- The frame number determines the order in which the photos are compiled in the video, 01, 02, 03, etc.
+- '%03d' variable % can be used to print changing variables in text/use them in names
+- Though not shown in the final code, 'sleep' is an alternative to 'time.sleep' which functions similarly and provides a timed pause. The main difference is that 'sleep' requires an import of sleep libraries (from time import sleep) while 'time.sleep' only requires time libraries (import time). 
