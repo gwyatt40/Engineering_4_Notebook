@@ -844,11 +844,13 @@ while True:
 - Pathway to Python files in Engineering 4 Notebook is Documents/Engineering_4_Notebook/Python (use cd to navigate)
 
 ## Headless Accelerometer
+
+
 	
 #### File: [accelerometer.py]()
 
 ### Description
-
+The first part of this assignment involves altering the code from the previous assignment so that instead of being displayed as numerical values, acceleration is shown on the LCD screen as a visual representation (ex. a circle changing size). Then, Systemd is used to detach the Rasperry Pi from the computer, so that the script runs automatically. Finally, the Raspberry Pi is connected to a battery via power boost 500c. 
 
 ### Results
 
@@ -880,14 +882,81 @@ while True:
 ### Code 
 	
 <details>
-  <summary> Pi Camera Code </summary>
+  <summary> Pi Camera Code 01 </summary>
         
 ``` 
+
+import time #imports time libraries necessary for pauses
+
+import picamera #imports camera libraries 
+
+print("Running") #constantly displayed while camera running 
+
+with picamera.PiCamera() as camera:
+	camera.resolution = (1024, 768) #set resolution 
+	camera.start_preview() #start preview screen 
+	time.sleep(2) # pause
+	camera.capture('camera_test2.jpg') # captures saves and names photo 
+	print ("photo") #'photo' displays when photo has been taken 	
+```
+</details>	
 	
+<details>
+  <summary> Pi Camera Code 02 </summary>
+        
+``` 
+ import time # imports time libraries necessary for pauses 
+import picamera # imports camera libraries 
+
+print("Running") # displays constantly while camera is running 
+
+with picamera.PiCamera() as camera: 
+	camera.resolution = (1024, 768) # sets resolution 
+	camera.image_effect = 'pastel' # sets effect (pastel)
+	camera.start_preview() # starts preview screen 
+	time.sleep(2) # pause 
+	camera.capture('pastel_pic1.jpg') #takes saves and names picture
+	print("picture 1: pastel") # prints that picture 1 has been taken
+
+with picamera.PiCamera() as camera:
+        camera.resolution = (1024, 768) # sets resolution 
+        camera.image_effect = 'cartoon' # sets effect (cartoon)
+        camera.start_preview() # starts preview screen 
+        time.sleep(2) # pause
+        camera.capture('cartoon_pic2.jpg') # takes saves and names picture
+        print("picture 2: cartoon") # prints that picture 2 has been taken
+
+with picamera.PiCamera() as camera:
+        camera.resolution = (1024, 768) # sets resolution 
+        camera.image_effect = 'negative' # sets effect (negative)
+        camera.start_preview() # starts preview screen 
+        time.sleep(2) # pause 
+        camera.capture('negative_pic3.jpg') # takes saves and names picture
+        print("picture 3: negative") # prints that picture 3 has been taken 
+
+with picamera.PiCamera() as camera:
+        camera.resolution = (1024, 768) # sets resolution 
+        camera.image_effect = 'oilpaint' # sets effect (oilpaint) 
+        camera.start_preview() # starts preview screen 
+        time.sleep(2) # pause 
+        camera.capture('oilpaint_pic4.jpg') # takes saves and names picture 
+        print("picture 4: oilpaint") # prints that picture 4 has been taken 
+
+with picamera.PiCamera() as camera:
+        camera.resolution = (1024, 768) # sets resolution 
+        camera.image_effect = 'sketch' # sets effect (sketch)
+        camera.start_preview() # starts preview screen 
+        time.sleep(2) # pause
+        camera.capture('sketch_pic5.jpg') # takes saves and names picture
+        print("picture 5: sketch") # prints that picture 5 has been taken	
 ```
 </details>	
 	
 ### Reflection
+
+- Some camera effects require assigned values (the list is found at the effects link below), none of the effects I selected required values.
+- The code for Camera Code 02 is definitely much longer and more repetitive than it should be, this is because I copypasted the same section of code for each of the 5 effects and did not bother to test if I could include all of the photos under a single "with ... as camera:" and not have to set the resolution, etc, every time a new photo is taken. If I spent more time on this assignment, I would simplify the code. 
+- The preview display screen did not appear for me, so I could not see the photos I took before I took them. The photos I took are not very good and are of nothing in particular, but they show the changes caused by different effects and that the camera is functional. 
 
 ## Copypasta
 
